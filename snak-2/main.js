@@ -51,4 +51,17 @@ for (let i = 0; i < footballClub.length; i++){
     console.log(thisClub);
 }
 
+// generate array with name club and penalty
+
+const arrayfootballClub = []
+
+for (let i = 0; i < footballClub.length; i++){
+    const thisClub = footballClub[i]
+    arrayfootballClub.push(thisClub.nameClub)
+    arrayfootballClub.push(thisClub.penalty)
+}
+
+console.log(arrayfootballClub);
+
+
 
