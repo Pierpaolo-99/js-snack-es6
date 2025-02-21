@@ -11,6 +11,9 @@ Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0
 Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.*/
 
+// take the element in the page
+const rowEl = document.querySelector('.row')
+
 // object array initialization
 const bike = [
     {
@@ -22,10 +25,22 @@ const bike = [
         weight: '25'
     },
     {
-        nameBike: 'Neuron CF 8',
+        nameBike: 'VAN RYSEL',
         weight: '30'
     },
 ]
+
+for (let i = 0; i < bike.length; i++){
+    const thisBike = bike[i]
+
+    const markup = `<div class="col">
+                        <div class="card text-center">
+                            <h3>${thisBike.nameBike}</h3>
+                            <p>${thisBike.weight}</p>
+                        </div>
+                    </div>`
+    rowEl.insertAdjacentHTML('beforeend', markup)
+} 
 
 // push the bike weight in array
 
