@@ -46,5 +46,13 @@ function genarateRandomNumber (){
     return Math.floor(Math.random() * 20) + 1
 }
 
-footballClub[0].nameClub = ''
+const randomNumber = genarateRandomNumber()
+
+for (let i = 0; i < footballClub.length; i++){
+    const thisClub = footballClub[i]
+    thisClub.penalty = randomNumber
+    console.log(thisClub);
+    
+}
+
 
