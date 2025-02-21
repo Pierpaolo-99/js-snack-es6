@@ -40,19 +40,15 @@ console.log(footballClub[0].nameClub);
 console.log(footballClub[0].point);
 console.log(footballClub[0].penalty);
 
-// generate random number with function
-
-function genarateRandomNumber (){
-    return Math.floor(Math.random() * 20) + 1
-}
-
-const randomNumber = genarateRandomNumber()
+// change object propriety values with random number 
 
 for (let i = 0; i < footballClub.length; i++){
+    const randomNumberPenalty = Math.floor(Math.random() * 20) + 1
+    const randomNumberPoint = Math.floor(Math.random() * 100) + 1
     const thisClub = footballClub[i]
-    thisClub.penalty = randomNumber
+    thisClub.penalty = randomNumberPenalty
+    thisClub.point = randomNumberPoint
     console.log(thisClub);
-    
 }
 
 
