@@ -11,28 +11,28 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 const footballClub = [
     {
         nameClub: 'Napoli',
-        point: '0',
-        penalty: '0'
+        point: 0,
+        penalty: 0
     },
     {
         nameClub: 'Inter',
-        point: '0',
-        penalty: '0'
+        point: 0,
+        penalty: 0
     },
     {
         nameClub: 'Atalanta',
-        point: '0',
-        penalty: '0'
+        point: 0,
+        penalty: 0
     },
     {
         nameClub: 'Juve',
-        point: '0',
-        penalty: '0'
+        point: 0,
+        penalty: 0
     },
     {
         nameClub: 'Lazio',
-        point: '0',
-        penalty: '0'
+        point: 0,
+        penalty: 0
     },
 ]
 
