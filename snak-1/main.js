@@ -47,12 +47,12 @@ for (let i = 0; i < bike.length; i++){
 
 console.log(arrBikeWeight);
 
-// find the bike max weight 
+// find the bike with minor weight 
 
-let minWeight = 20;
+let minWeight = bike[0];
 
 for (let i = 1; i < arrBikeWeight.length; i++) {
-  if (arrBikeWeight[i] < minWeight) {
+  if (bike[i].weight < minWeight.weight) {
     minWeight = arrBikeWeight[i];
   }
 }
@@ -71,6 +71,6 @@ console.log(arrBikeName);
 
 // stamp the bike with max weight in page
 
-resultEl.innerHTML = `La bici con il maggior peso è ${arrBikeName[2]} con il peso di ${Number(minWeight)} kg` 
+resultEl.innerHTML = `La bici con il minor peso è ${minWeight.nameBike}` 
 
 

@@ -42,5 +42,9 @@ console.log(footballClub[0].penalty);
 
 // generate random number with function
 
+function genarateRandomNumber (){
+    return Math.floor(Math.random() * 20) + 1
+}
 
+footballClub[0].nameClub = ''
 
