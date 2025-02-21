@@ -13,6 +13,7 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 
 // take the element in the page
 const rowEl = document.querySelector('.row')
+const resultEl = document.getElementById('result')
 
 // object array initialization
 const bike = [
@@ -55,16 +56,28 @@ console.log(arrBikeWeight);
 
 // find the bike max weight 
 
-let max = 0;
+let maxWeight = 0;
 
 for (let i = 1; i < arrBikeWeight.length; i++) {
-  if (arrBikeWeight[i] > max) {
-    max = arrBikeWeight[i];
+  if (arrBikeWeight[i] > maxWeight) {
+    maxWeight = arrBikeWeight[i];
   }
 }
-console.log(max);
+console.log(maxWeight);
+
+// push the name bike in array 
+const arrBikeName = []
+
+for (let i = 0; i < bike.length; i++){
+    const thisBike = bike[i]
+    arrBikeName.push(thisBike.nameBike)
+}
+
+console.log(arrBikeName);
+
 
 // stamp the bike with max weight in page
 
+resultEl.innerHTML = `La bici con il maggior peso è ${arrBikeName[2]} con il peso di ${maxWeight} kg` 
 
 
