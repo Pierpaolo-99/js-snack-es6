@@ -49,14 +49,14 @@ console.log(arrBikeWeight);
 
 // find the bike max weight 
 
-let maxWeight = 0;
+let minWeight = 20;
 
 for (let i = 1; i < arrBikeWeight.length; i++) {
-  if (arrBikeWeight[i] > maxWeight) {
-    maxWeight = arrBikeWeight[i];
+  if (arrBikeWeight[i] < minWeight) {
+    minWeight = arrBikeWeight[i];
   }
 }
-console.log(maxWeight);
+console.log(minWeight);
 
 // push the name bike in array 
 const arrBikeName = []
@@ -71,6 +71,6 @@ console.log(arrBikeName);
 
 // stamp the bike with max weight in page
 
-resultEl.innerHTML = `La bici con il maggior peso è ${arrBikeName[2]} con il peso di ${maxWeight} kg` 
+resultEl.innerHTML = `La bici con il maggior peso è ${arrBikeName[2]} con il peso di ${Number(minWeight)} kg` 
 
 
